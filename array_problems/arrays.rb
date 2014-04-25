@@ -14,6 +14,11 @@ module ArrayUtil
   end
 
   def self.middle_element(array)
+    if array.length > 0
+      array[0]
+    else
+      nil
+    end
   end
 
   def self.sum_arrays(array1, array2)
