@@ -19,7 +19,8 @@ module ArrayUtil
     elsif array.length == 0
       nil
     elsif array.length % 2 == 0
-      middle = (array[(array.length/2)+1] + array[(array.length/2)+1])/2
+      middle = (array[array.length/2] + array[(array.length/2)-1])/2
+      return middle
     else
       array[array.length/2]
     end
