@@ -4,7 +4,8 @@ require 'pry-debugger'
 module ArrayUtil
   def self.max(array)
     if array.length > 1
-      array.length
+      arr = array.sort
+      arr[-1]
     elsif array.length == 1
       array[0]
     else
