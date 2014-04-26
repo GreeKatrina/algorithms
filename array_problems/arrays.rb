@@ -4,8 +4,11 @@ require 'pry-debugger'
 module ArrayUtil
   def self.max(array)
     if array.length > 1
-      arr = array.sort
-      arr[-1]
+      big = array [0]
+      for num in array
+        big = num if num >= big
+      end
+      big
     elsif array.length == 1
       array[0]
     else
@@ -30,3 +33,5 @@ module ArrayUtil
   def self.sum_arrays(array1, array2)
   end
 end
+
+
