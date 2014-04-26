@@ -31,7 +31,15 @@ module ArrayUtil
   end
 
   def self.sum_arrays(array1, array2)
-    return []
+      if array1 == nil
+        []
+      else
+        array3 = []
+        for x in (0...array1.length)
+          array3 << array1[x] + array2[x]
+        end
+        array3
+      end
   end
 end
 
