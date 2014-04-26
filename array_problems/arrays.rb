@@ -31,6 +31,7 @@ module ArrayUtil
   end
 
   def self.sum_arrays(array1, array2)
+    return []
   end
 end
 
